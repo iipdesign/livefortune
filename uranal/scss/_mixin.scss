@@ -1,0 +1,18 @@
+@use "variables" as v;
+
+@mixin pc {
+    @media (max-width: (v.$pc)) {
+      @content;
+    }
+  }
+  @mixin tab {
+    @media (max-width: (v.$tab)) {
+      @content;
+    }
+  }
+  @mixin sp {
+    @media (max-width: (v.$sp)) {
+      @content;
+    }
+  }
+  

@@ -1,0 +1,108 @@
+
+/*--------------------------------------
+Footer
+---------------------------------------*/
+@use "../variables" as v;
+
+// variable
+$wht:#fff;
+$blk:#000;
+$cat-font-size:13px;
+$main-font-family: fot-tsukuardgothic-std, sans-serif;
+// variable
+
+#footer {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 0px;
+  background-color:$wht;
+    .inner{
+      max-width:1100px;
+      width:100%;
+      margin: auto;
+      padding-top: 50px;
+      @media (max-width:  (v.$sp)) {
+        width:90%;
+        padding-top:0px;
+      }
+      .menu-footernav-container{
+        margin-left:100px;
+        @media (max-width:  (v.$sp)) {
+          margin-left:0px;
+        }
+      }
+      ul{
+        align-items: center;
+        height: 50px;
+        margin: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width:100%;
+        padding-bottom: 150px;
+        @media (max-width: (v.$tab)) {
+          height:220px;
+          display:flex;
+        }
+        @media (max-width: (v.$sp)) {
+          margin-bottom: 40px;
+        }
+          li{
+            padding-left: 0px;
+            text-align: center;
+            width:15%;
+            text-align: center;
+            text-decoration: none;
+            margin-right:10px;
+            line-height: 20px;
+            margin-top: -10px;
+            font-family: fot-tsukuardgothic-std, sans-serif;
+            @media (max-width:  (v.$tab)) {
+              padding-left:0px;
+              padding: 5px;
+              margin-left: 20px;
+              border-bottom:none;
+              width:42%;
+            }
+            @media (max-width:  (v.$sp)) {
+              width: 42%;
+              padding-bottom: 30px;
+            }
+            a{
+            width:100%;
+            color:$blk;
+            text-align: center;
+            line-height:45px;
+            font-size: $cat-font-size;
+            text-decoration: none;
+            @media (max-width:  (v.$tab)) {
+              border-right: 1px solid #9D9D9D;
+              padding-right:20px;
+              line-height:20px;
+              font-size: 13px;
+            }
+              }
+          }
+      }
+    .footer_logo{
+    padding-bottom:40px;
+    @media (max-width:  (v.$sp)) {
+      padding-bottom: 40px;
+    }
+    .logo_f{
+      width:40%;
+      margin:auto;
+      @media (max-width:  (v.$tab)) {
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom:0px;
+      }
+    }
+
+}
+}
+}
+
+

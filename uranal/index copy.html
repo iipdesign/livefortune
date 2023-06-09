@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uranal</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap-4.4-1.js"></script>
+    <script type='text/javascript' src="js/jquery-3-4-1.min.js"></script>
+    <script type='text/javascript' src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <!-- FOT-筑紫A丸ゴシック Std　ADOBE FONT -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'wyh8eqk',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div class="header">
+    <img class="d-block w-100" src="img/pctoplogo.png" alt="うらなーるロゴ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">TOP <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">恋愛</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">夫婦関係</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">人間関係</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">将来</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">その他</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">今週の占い</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+<!-- -------------menu------------- -->
+<!--//pcmenu-->
+<div class="pc">	 
+	
+  <header>
+  <div class="logo">
+     <h1 class="navbar_brand"><img src="img/logo.png"></h1>
+  </div>	
+    
+  <ul class="menu">
+    <li class="menu__single">TOPICS</li>
+    <li class="menu__single">NEW ITEMS</li>
+    <li class="menu__single">RANKING</li>
+      <li class="menu__single">
+          <a href="#" class="init-bottom">CATEGORY<span><img src="img/icon_nav.png"></span></a>
+          <ul class="menu__second-level">
+              <li><a href="#">Child Menu</a></li>
+              <li><a href="#">Child Menu</a></li>
+              <li><a href="#">Child Menu</a></li>
+          </ul>
+  
+      </li>
+  </ul>	
+  
+  <ul class="header_icon">
+      
+    <li class="menu__single"><img src="img/search.png"></li>
+    <li class="menu__single"><img src="img/like.png"></li>
+      <li class="menu__single">
+          <a href="#" class="init-bottom"><img src="img/login.png"><span><img src="img/icon_nav2.png"></span></a>
+          <ul class="menu__second-leve2">
+              <li><a href="#"><img src="img/login.png"></a></li>
+              <li><a href="#"><img src="img/login.png"></a></li>
+              <li><a href="#"><img src="img/login.png"></a></li>
+          </ul>
+  
+      </li>
+    <li class="menu__single"><img src="img/cartpc.png"></li>
+  </ul>	
+  </header>	
+  </div>	
+    <!--pc menu-->	
+    
+    <!--sp menu-->
+  <div class="sp">
+    <div class="header_e">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!--アコーディオンメニュー部分 start-->
+            <div class="accordion_sp_e">
+              <p class="sp_left_ttl_e">ACCOUNT</p>
+              <label for="menu1">ログイン</label>
+              <input type="checkbox" id="menu1" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">ニット</a></li>
+                <li><a href="">カーディガン</a></li>
+                <li><a href="">パーカー</a></li>
+                <li><a href="">ジャケット</a></li>
+                <li><a href="">カットソー</a></li>
+                <li><a href="">シャツ・ブラウス</a></li>
+              </ul>
+              <label for="menu2">新機会員登録</label>
+              <input type="checkbox" id="menu2" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">スカート</a></li>
+                <li><a href="">デニム</a></li>
+                <li><a href="">パンツ</a></li>
+                <li><a href="">レッグウェア</a></li>
+              </ul>
+              <label for="menu3">メールマガジン</label>
+              <input type="checkbox" id="menu3" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="t">コート</a></li>
+                <li><a href="">ジャケット</a></li>
+              </ul>
+  
+              
+              <p class="sp_left_ttl_e">SNS</p>
+              
+              <label for="menu4">INSTAGRAM</label>
+              <input type="checkbox" id="menu4" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">ワンピース</a></li>
+                <li><a href="">	オールインワン</a></li>
+              </ul>
+              <label for="menu5">LINE</label>
+              <input type="checkbox" id="menu5" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">ブーツ</a></li>
+                <li><a href="">パンプス</a></li>
+                <li><a href="">サンダル</a></li>
+              </ul>
+              <label for="menu6">TWITTER</label>
+              <input type="checkbox" id="menu6" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">ピアス</a></li>
+                <li><a href="">ヘア小物</a></li>
+              </ul>
+              <label for="menu7">FACEBOOK</label>
+              <input type="checkbox" id="menu7" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">バッグ</a></li>
+                <li><a href="">帽子</a></li>
+                <li><a href="">ベルト</a></li>
+                <li><a href="">ストール</a></li>
+              </ul>
+              <label for="menu7">APP</label>
+              <input type="checkbox" id="menu7" class="toggle" />
+              <ul class="left_nav_brand">
+                <li><a href="">バッグ</a></li>
+                <li><a href="">帽子</a></li>
+                <li><a href="">ベルト</a></li>
+                <li><a href="">ストール</a></li>
+              </ul>
+  
+            </div>
+  
+            <!--アコーディオンメニュー部分 end-->
+  
+        </div>
+  
+      </div>
+
+
+<!-- -------------menu------------- -->
+
+
+  
+    <div class="container">
+      <div class="wrap">
+        <div class="colum">
+      <div class="row">
+
+<!-- 一番目に表示 -->
+        <div class="col-lg-8 col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-bottom___02">
+                      <a href="#" class="btn btn-primary">恋愛</a>
+                      <p class="colum_day">2022.01.01</p>
+                  </div>
+                  <h5 class="card-title">タイトル入ります。タイトル
+                    入ります。タイトル入ります。</h5>       
+                </div>
+              </div>
+            </div>
+			    </div>
+            </div>
+<!-- 一番目に表示 -->
+			  
+			  
+        <div class="col-lg-8 col-12">
+          <div class="row">
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">タイトル入ります。タイトル
+                    入ります。タイトル入ります。</h5>
+                  <p class="card-text">冒頭文が入ります冒頭文が入ります
+                    冒頭文が入ります冒頭文が入ります
+                    </p>
+                  <div class="card-bottom">
+                       <a href="#" class="btn btn-primary">恋愛</a>
+                       <p class="colum_day">2022.01.01</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">タイトル入ります。タイトル
+                    入ります。タイトル入ります。</h5>
+                  <p class="card-text">冒頭文が入ります冒頭文が入ります
+                    冒頭文が入ります冒頭文が入ります
+                    </p>
+                    <div class="card-bottom">
+                      <a href="#" class="btn btn-primary">恋愛</a>
+                      <p class="colum_day">2022.01.01</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">タイトル入ります。タイトル
+                    入ります。タイトル入ります。</h5>
+                  <p class="card-text">冒頭文が入ります冒頭文が入ります
+                    冒頭文が入ります冒頭文が入ります
+                    </p>
+                    <div class="card-bottom">
+                      <a href="#" class="btn btn-primary">恋愛</a>
+                      <p class="colum_day">2022.01.01</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">タイトル入ります。タイトル
+                    入ります。タイトル入ります。</h5>
+                  <p class="card-text">冒頭文が入ります冒頭文が入ります
+                    冒頭文が入ります冒頭文が入ります
+                    </p>
+                    <div class="card-bottom">
+                      <a href="#" class="btn btn-primary">恋愛</a>
+                      <p class="colum_day">2022.01.01</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+
+    </div>
+<!-- サイドバー -->
+<div class="sidebar">
+      <div class="col-lg-4 col-12">
+        <div class="row mx-0">
+          <div class="col-12 card bg-light mx-auto">
+            <h3 class="text-center card-header">ランキング</h3>
+            <form class="card___body">
+              <div class="col-lg-8 col-12">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div class="card">
+                      <div class="card___left">
+                          <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                      </div>
+                      <div class="card___right">
+                        <h5 class="card___title">タイトル入ります。タイトル
+                          入ります。タイトル入ります。</h5>        
+                        <div class="card___bottom">
+                             <a href="#" class="btn btn-primary">恋愛</a>
+                             <p class="colum_day">2022.01.01</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-12">
+                    <div class="card">
+                      <div class="card___left">
+                          <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                      </div>
+                      <div class="card___right">
+                        <h5 class="card___title">タイトル入ります。タイトル
+                          入ります。タイトル入ります。</h5>        
+                        <div class="card___bottom">
+                             <a href="#" class="btn btn-primary">恋愛</a>
+                             <p class="colum_day">2022.01.01</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-12">
+                    <div class="card">
+                      <div class="card___left">
+                          <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                      </div>
+                      <div class="card___right">
+                        <h5 class="card___title">タイトル入ります。タイトル
+                          入ります。タイトル入ります。</h5>        
+                        <div class="card___bottom">
+                             <a href="#" class="btn btn-primary">恋愛</a>
+                             <p class="colum_day">2022.01.01</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-12">
+                    <div class="card">
+                      <div class="card___left">
+                          <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                      </div>
+                      <div class="card___right">
+                        <h5 class="card___title">タイトル入ります。タイトル
+                          入ります。タイトル入ります。</h5>        
+                        <div class="card___bottom">
+                             <a href="#" class="btn btn-primary">恋愛</a>
+                             <p class="colum_day">2022.01.01</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-12">
+                    <div class="card">
+                      <div class="card___left">
+                          <img class="card-img-top" src="img/image.jpg" alt="Card image cap">
+                      </div>
+                      <div class="card___right">
+                        <h5 class="card___title">タイトル入ります。タイトル
+                          入ります。タイトル入ります。</h5>        
+                        <div class="card___bottom">
+                             <a href="#" class="btn btn-primary">恋愛</a>
+                             <p class="colum_day">2022.01.01</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+ 				</div>
+				</div>
+            </form>
+ 
+
+            
+          </div>
+          <div class="col-12">
+            <h3 class="text-center">タグ</h3>
+
+          </div>
+     
+
+
+
+
+        <div class="bnr">
+              <img class="bnr_img01" src="img/bnr01.png" alt="banner">
+              <img class="bnr_img02" src="img/bnr02.png" alt="banner">
+        </div>
+
+      </div>
+
+<!-- サイドバー -->
+
+</div>
+    </div>
+   
+    <section>
+    </div>
+
+
+  </div>
+
+
+        <!-- ページナビゲーション -->
+        <nav class="pagination">
+          <div class="nav-links">
+            <a class="first page-numbers" href="">&laquo;</a>
+            <a class="prev page-numbers" href="">&lsaquo;</a>
+            <span aria-current="page" class="page-numbers current">1</span>
+            <a class="page-numbers" href="">2</a>
+            <a class="page-numbers" href="">3</a>
+            <span class="page-numbers dots">…</span>
+            <a class="page-numbers" href="">10</a>
+            <a class="next page-numbers" href="">&rsaquo;</a>
+            <a class="last page-numbers" href="">&raquo;</a>
+          </div>
+        </nav>
+       <!-- ページナビゲーション -->
+  
+
+    <footer class="text-center footer">
+
+<!-- fotter menu -->
+      <section id="footer">
+        <div class="inner">
+                <div class="content_f">
+                <div class="footer_logo">
+                    <div class="logo_f">
+                            <h1><a href="/"><img src="img/sptoplogo.png"></a></h1>
+                    </div>
+                </div>
+                    <ul class="footer-nav">
+                            <li><a href="/profile">恋愛</a></li>
+                            <li><a href="/counseling/">夫婦関係</a></li>
+                            <li><a href="/training_page/">人間関係</a></li>
+                            <li><a href="/corporate_services/">将来</a></li>
+                            <li><a href="/media/">その他</a></li>
+                            <li><a href="/category/news">今週の占い</a></li>
+                            <li><a href="/contact">当たるオンラインZOOM占い【ウラナール】　</a></li> 
+                            <li><a href="/media/">運営会社</a></li>
+                            <li><a href="/category/news">プライバシーポリシー</a></li>
+                            <li><a href="/contact">問い合わせ</a></li> 
+                    </ul>
+            </div>
+    </div>
+<!-- fotter menu -->
+    <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-12">
+          <p class="copyright">Copyright © 2023株式会社IIP All Rights Reserved.</p>
+        </div>
+      </div>
+    <!-- </div> -->
+    </section>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="file:///Macintosh HD/Users/sakihorikawa/Library/Application Support/Adobe/Dreamweaver 2021/ja_JP/Configuration/Temp/Assets/eam5cda4ce4.TMP/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="file:///Macintosh HD/Users/sakihorikawa/Library/Application Support/Adobe/Dreamweaver 2021/ja_JP/Configuration/Temp/Assets/eam5cda4ce4.TMP/js/popper.min.js"></script>
+    <script src="file:///Macintosh HD/Users/sakihorikawa/Library/Application Support/Adobe/Dreamweaver 2021/ja_JP/Configuration/Temp/Assets/eam5cda4ce4.TMP/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

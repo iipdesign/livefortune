@@ -1,0 +1,139 @@
+@use "../variables" as v;
+
+// variable
+$wht:#fff;
+$blk:#000;
+
+$main-font-family: fot-tsukuardgothic-std, sans-serif;
+// variable
+
+
+
+.pagination {
+  text-align: center;
+  margin:auto;
+  width:60%;
+  max-width:1100px;
+  padding:0 0 50px;
+  margin: 2rem 0;
+text-align: right;
+margin-right: 10%;
+}
+.pagination a,
+.pagination span {
+  font-family:$main-font-family;
+  display: inline-block;
+  margin: 8px 0;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  padding: 10px 15px 0;
+  box-sizing: border-box;
+  color: #333;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.wp-pagenavi span {
+  display: none;
+}
+
+.pagination a:hover {
+  opacity: 0.7;
+}
+.pagination .current {
+  background: $wht;
+  border:solid 1px $blk;
+  color:$blk;
+}
+
+@media screen and (max-width: 767px) {
+  .pagination a,
+  .pagination span {
+    margin: 2px 0;
+    width: 36px;
+    height: 36px;
+    padding:9px 12px 0px;
+  }
+}
+
+
+/*
+module > pagination
+------------------------------
+*/
+
+.paginavi{
+  margin: auto;
+  width:45%;
+  @media (max-width:  (v.$sp)) {
+    padding-top: 40px;
+    }
+}
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 19px;
+  @media (max-width:  (v.$sp)) {
+    padding-left: 90px;
+    }
+}
+
+.page-numbers .current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $wht;
+  width: 40px;
+  height: 40px;
+  padding-top:0px;
+}
+
+.page-numbers .prev img {
+  -webkit-transform: scale(-1);
+  transform: scale(-1);
+}
+
+
+
+
+
+
+/*
+module > pagination
+------------------------------
+*/
+
+.wp-pagenavi{
+  margin: auto;
+  width:45%;
+}
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 19px;
+  @media (max-width:  (v.$sp)) {
+    padding-left: 90px;
+    }
+}
+
+.page-numbers .current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $wht;
+  width: 40px;
+  height: 40px;
+  padding-top:0px;
+}
+
+.page-numbers .prev img {
+  -webkit-transform: scale(-1);
+  transform: scale(-1);
+}
+

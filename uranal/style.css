@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+Theme Name: uranal
+Author:うらなーる
+Description: うらなーるのオリジナルテーマです
+Version: 1.0
+*/
+@use "scss/reset";
+@forward "scss/variables";
+@forward "scss/mixin";
+@use "scss/project/p-top";
+@use "scss/project/p-common";
+@use "scss/project/p-safari";
+@use "scss/component/c-button";
+@use "scss/component/c-pagination";
+@use "scss/layout/l-sidebar";
+@use "scss/layout/l-header";
+@use "scss/layout/l-headersp";
+@use "scss/layout/l-footer";
+@use "scss/layout/l-grid";
+@use "scss/layout/l-single";
+@use "scss/setting/s-color";
+@use "scss/setting/s-typography";
+@use "scss/setting/s-wordpress";
+/*# sourceMappingURL=style.css.map */

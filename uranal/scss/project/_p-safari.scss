@@ -1,0 +1,30 @@
+
+@use "../variables" as v;
+
+
+// SafariだけにCSSを反映させるCSSハック
+_::-webkit-full-page-media, _:future, :root .main {
+  margin-top:-20px;
+}
+
+@media only screen and ( max-width :500px ) {
+
+_::-webkit-full-page-media, _:future, :root .scroll-nav {
+  margin-top:40px;
+}
+
+_::-webkit-full-page-media, _:future, :root .scroll-nav{
+  margin-top:80px;
+}
+_::-webkit-full-page-media, _:future, :root body {
+  margin-top:-10px;
+}
+  _::-webkit-full-page-media, _:future, :root .main {
+    padding-top:85px;
+  }
+  
+  _::-webkit-full-page-media, _:future, :root #footer .inner ul li {
+      width: 41%;
+  }
+  }
+  
